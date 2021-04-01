@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".StartActivity">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/sudokupicture"></ImageView>
+
+    <TextView
+        android:id="@+id/texttext1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_below="@+id/imageView1"
+        android:textSize="17sp"
+        android:text="Izaberite broj između  1 i 80.\novo će biti broj praznih polja.\n"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorPrimary"
+        ></TextView>
+    <EditText
+        android:id="@+id/edittext2"
+        android:layout_below="@+id/texttext1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Unesite broj 1-80"
+        android:inputType="number"
+        ></EditText>
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edittext2"
+        android:layout_marginTop="-171dp"
+        android:text="Započnite Sudoku"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorPrimary"></Button>
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_below="@+id/edittext2"
+        android:textSize="13sp"
+        android:text="Početnik 1-13\nLagano 13-26 \nSrednje 27-40\nNormalno 41-54\nTeško 55-68\nNajteže 69-80"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorPrimary"
+        ></TextView>
+
+
+</RelativeLayout>
